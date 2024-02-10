@@ -11,8 +11,6 @@
                 <h5 class="card-title">{{ event.venue }}</h5>
                 <p class="card-text">{{ event.description }}</p>
                 <p class="card-text">Date: {{ event.date_time | date }}</p>
-                <p class="card-text">Seats Available: {{ event.seats_available }}</p>
-                <button class="btn btn-danger" (click)="removeFromWishlist(event)">Remove from Wishlist</button>
             </div>
         </div>
     </div>
