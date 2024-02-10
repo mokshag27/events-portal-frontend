@@ -1,7 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { WishlistEventComponent } from './wishlist-event/wishlist-event.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  {
+    path:'wishlist',
+    component:WishlistEventComponent
+  }
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
