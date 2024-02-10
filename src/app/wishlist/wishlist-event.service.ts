@@ -10,7 +10,7 @@ import { Observable } from 'rxjs';
 export class WishlistEventService {
   constructor(private http: HttpClient) {}
   getWishlistEvents(user_id: number): Observable<any> {
-    return this.http.post(
-      APP_CONSTANTS.BACKEND_URL + 'wishlist',user_id);
+    return this.http.get(
+      APP_CONSTANTS.BACKEND_URL + 'wishlist-event/'+user_id);
   }
 }
