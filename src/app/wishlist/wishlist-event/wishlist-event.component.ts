@@ -1,14 +1,16 @@
 import { Component, OnInit } from '@angular/core';
-import { WishlistEvent } from '../shared/interface/wishlistevent.interface';
-import { WishlistEventService } from '../wishlist/wishlist-event.service';
+import { WishlistEvent } from '../../shared/interface/wishlistevent.interface';
+import { WishlistEventService } from '../wishlist-event.service';
+import { Event } from 'src/app/shared/interface/events.interface';
 
 @Component({
   selector: 'app-wishlist-event',
   templateUrl: './wishlist-event.component.html',
-  styleUrls: ['./wishlist-event.component.css'],
+  styleUrls: ['./wishlist-event.component.css']
 })
+
 export class WishlistEventComponent implements OnInit {
-  events!: WishlistEvent[];
+  events!: Event[];
   user_id!:number
   constructor(private wishlistEventService: WishlistEventService) {}
 

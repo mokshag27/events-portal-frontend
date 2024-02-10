@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { WishlistEventComponent } from './wishlist-event/wishlist-event.component';
+import { WishlistEventComponent } from './wishlist/wishlist-event/wishlist-event.component';
 
 const routes: Routes = [
   {
