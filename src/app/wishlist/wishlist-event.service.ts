@@ -6,6 +6,7 @@ import { Observable } from 'rxjs';
 @Injectable({
   providedIn: 'root',
 })
+
 export class WishlistEventService {
   constructor(private http: HttpClient) {}
   getWishlistEvents(user_id: number): Observable<any> {
