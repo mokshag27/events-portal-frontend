@@ -11,7 +11,7 @@ import { Event } from 'src/app/shared/interface/events.interface';
 
 export class WishlistEventComponent implements OnInit {
   events!: Event[];
-  user_id!:number
+  user_id:number=1
   constructor(private wishlistEventService: WishlistEventService) {}
 
   ngOnInit(): void {

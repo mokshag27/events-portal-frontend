@@ -1,0 +1,26 @@
+<!-- <p>user-register works!</p> -->
+
+<div class="d-flex hero">
+    <form class="form" [formGroup]="createUser">
+        <h1 style="padding-left: 170px; padding-bottom: 30px;">Sign Up</h1>
+        <label for="username">Name</label>
+        <input type="text" name="name" placeholder="Enter Name" style="margin-left: 170px;" formControlName="name">
+        <br>
+        <label for="email">Email ID</label>
+        <input type="email" name="email" placeholder="Enter Email ID" style="margin-left: 145px;" formControlName="email">
+        <br>
+        <label for="number">Phone Number</label>
+        <input type="text" name="phone" placeholder="Enter Phone Number" style="margin-left: 65px;" formControlName="phone">
+        <br>
+        <label for="username">Username</label>
+        <input type="text" name="username" placeholder="Enter Username" style="margin-left: 120px;" formControlName="username">
+        <br>
+        <label for="password">Password</label>
+        <input type="password" name="password" placeholder="Enter Password" style="margin-left: 130px;" formControlName="pwd">
+        <br>
+        <label for="start">Date Of Birth</label>
+        <input type="date" id="start" name="trip-start" style="margin-left: 85px;" value="" min="1900-01-01" max="2024-12-31" formControlName="dob"><br>
+        
+        <button type="submit" (click)="submit()">Sign Up</button>
+    </form>
+</div>

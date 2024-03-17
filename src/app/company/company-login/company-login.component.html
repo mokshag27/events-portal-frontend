@@ -1,0 +1,29 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Amita&family=Castoro+Titling&family=Charm&family=Coming+Soon&family=El+Messiri&family=Italianno&family=Julius+Sans+One&family=Kaushan+Script&family=Marcellus&family=Mrs+Saint+Delafield&family=Quintessential&family=Qwigley&family=Tangerine:wght@700&family=Ysabeau+Infant:ital,wght@1,1&display=swap" rel="stylesheet">
+
+    
+    <div class="d-flex hero">
+        <form class="form" [formGroup]="login">
+            <h1 style="padding-left: 115px; padding-bottom: 20px; font-family: 'Marcellus', serif;;">Log In</h1>
+            <label for="username">Username</label>
+            <input type="text" name="username" placeholder="Enter Username" formControlName="email">
+            <br>
+            <br>
+            <label for="password">Password</label>
+            <input type="password" name="password" placeholder="Enter Password" style="margin-left: 30px;" formControlName="pwd">
+
+
+            <button type="submit" (click)="submit()">Login</button>
+            <p style="margin-left: 120px;">--------OR--------</p>
+            <p style="margin-left: 130px;">Continue with:</p>
+            <a href=""><button><i class="fa-brands fa-google"></i></button></a>
+            <p>Don't have an account?<a href="signup.html" class="atag">Sign In</a></p>
+        </form>
+    </div>
+

@@ -4,8 +4,7 @@ export interface Event {
   venue: string;
   description: string;
   date_time: string;
-  ratings: number;
   seats_available: number;
-  category_id: number;
-  company_id: number;
+  category_name: string;
+  company_name: string;
 }

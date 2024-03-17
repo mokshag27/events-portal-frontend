@@ -1,0 +1,43 @@
+
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Allura&family=Amita&family=Castoro+Titling&family=Charm&family=Coming+Soon&family=El+Messiri&family=Italianno&family=Julius+Sans+One&family=Kaushan+Script&family=Marcellus&family=Mrs+Saint+Delafield&family=Quintessential&family=Qwigley&family=Tangerine:wght@700&family=Ysabeau+Infant:ital,wght@1,1&display=swap" rel="stylesheet">
+    
+
+
+    <div class="d-flex hero">
+        <form class="form" [formGroup]="createUser">
+            <h1 style="padding-left: 200px; padding-bottom: 30px; font-family: 'Marcellus', serif;">Company Details</h1>
+            <label for="username">Company's Name</label>
+            <input type="text" name="name" placeholder="Enter Name" style="margin-left: 170px;" formControlName="companyName">
+            <br>
+            <label for="email">Company's Email ID</label>
+            <input type="email" name="email" placeholder="Enter Email ID" style="margin-left: 145px;" formControlName="email">>
+            <br>
+            <label for="number">Company's Phone Number</label>
+            <input type="text" name="phone" placeholder="Enter Phone Number" style="margin-left: 65px;" formControlName="phone">>
+            <br>
+            <label for="license">License Number</label>
+            <input type="text" name="license" placeholder="Enter License Number" style="margin-left: 180px;">
+            <br>
+            <label for="date">Date of Registration</label>
+            <input type="date" name="date" style="margin-left: 135px;" formControlName="registrationDate">>
+            <br>
+            <label for="account">Account Number</label>
+            <input type="text" name="account" placeholder="Enter Account Number" style="margin-left: 165px;" formControlName="accNo">>
+            <br>
+            <label for="account">Password</label>
+            <input type="password" name="employee" placeholder="Enter Number of Employees" style="margin-left: 175px;" formControlName="pwd">
+            <br>
+            <label for="address">Address</label>
+            <input type="text" name="username" placeholder="Enter Address" style="margin-left: 275px;" formControlName="location">
+            <button type="submit" (click)="submit()">Submit</button>
+            
+        </form>
+    </div>

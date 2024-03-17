@@ -6,6 +6,9 @@ import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { SharedModule } from './shared/shared.module';
 import { WishlistModule } from './wishlist/wishlist.module';
+import { AuthModule } from './auth/auth.module';
+import { AdminModule } from './admin/admin.module';
+import { CompanyModule } from './company/company.module';
 
 @NgModule({
   declarations: [
@@ -15,8 +18,11 @@ import { WishlistModule } from './wishlist/wishlist.module';
     BrowserModule,
     AppRoutingModule,
     NgbModule,
+    AuthModule,
     SharedModule,
-    WishlistModule
+    WishlistModule,
+    AdminModule,
+    CompanyModule
   ],
   providers: [],
   bootstrap: [AppComponent]
