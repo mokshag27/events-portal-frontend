@@ -18,6 +18,7 @@ export class AdminDashboardComponent {
 
   ngOnInit(): void {
     this.getCompanyDetails();
+    // this.updateStatus(8,'Accepted')
   }
 
   getCompanyDetails(): void {
